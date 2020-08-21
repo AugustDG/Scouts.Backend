@@ -53,7 +53,6 @@ namespace Scouts.Backend.Controllers
                     throw new Exception("Invalid platform request");
             }
 
-
             // In the backend we can control if a user is allowed to add tags
             //installation.Tags = new List<string>(deviceUpdate.Tags);
             //installation.Tags.Add("username:" + username);
