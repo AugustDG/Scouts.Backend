@@ -1,4 +1,6 @@
-﻿namespace Scouts.Backend.Dev
+﻿using System.Collections.Generic;
+
+namespace Scouts.Backend.Dev
 {
     public static class Constants
     {
@@ -12,6 +14,6 @@
         public string InstallationId { get; set; }
         public string Platform { get; set; }
         public string PushChannel { get; set; }
-        public string[] Tags { get; set; }
+        public List<string> Tags { get; set; }
     }
 }
