@@ -73,7 +73,7 @@ namespace Scouts.Backend.Controllers
                 InstallationId = receivedInstallation.InstallationId,
                 Platform = receivedInstallation.Platform.ToString(),
                 PushChannel = receivedInstallation.PushChannel,
-                Tags = receivedInstallation.Tags.ToArray()
+                Tags = receivedInstallation.Tags.ToList()
             };
         }
 
