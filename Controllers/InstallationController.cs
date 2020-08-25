@@ -106,7 +106,7 @@ namespace Scouts.Backend.Controllers
                 {
                     if (tag.Contains("InstallationId:"))
                     {
-                        installationId = tag.Substring(tag.IndexOf('{'), 36);
+                        installationId = tag.Substring(tag.IndexOf('{'), 32);
                     }
                 }
 
