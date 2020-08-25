@@ -112,7 +112,7 @@ namespace Scouts.Backend.Controllers
 
                 var receivedInstallation = await _hub.GetInstallationAsync(installationId);
 
-                if (receivedInstallation.PushChannelExpired == true) await _hub.DeleteInstallation(installationId);
+                if (receivedInstallation.PushChannelExpired == true) await _hub.DeleteInstallationAsync(installationId);
             }
         }
     }
