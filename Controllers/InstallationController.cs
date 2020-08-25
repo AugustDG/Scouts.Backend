@@ -59,7 +59,27 @@ namespace Scouts.Backend.Controllers
 
             await _hub.CreateOrUpdateInstallationAsync(installation);
 
-            await CleanupInstallations();
+            //await CleanupInstallations();
+            
+            var allRegistrations = await _hub.GetAllRegistrationsAsync(0);
+
+            foreach (var registration in allRegistrations)
+            {
+                var installationId = string.Empty;
+
+                var tags = registration.Tags;
+                foreach(var tag in tags)
+                {
+                    if (tag.Contains("InstallationId:"))
+                    {
+                        installationId = tag.Substring(tag.IndexOf('{'), 32);
+                    }
+                }
+
+                var receivedInstallation = await _hub.GetInstallationAsync(installationId);
+
+                if (receivedInstallation.PushChannelExpired == true) await _hub.DeleteInstallationAsync(installationId);
+            }
             
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
