@@ -31,7 +31,7 @@ namespace Scouts.Backend.Controllers
                 InstallationId = deviceUpdate.InstallationId,
                 PushChannel = deviceUpdate.PushChannel,
                 Tags = deviceUpdate.Tags,
-                ExpirationTime = DateTime.Now.Add(new TimeSpan(0, 0, 0, 30))
+                ExpirationTime = DateTime.Now.Add(new TimeSpan(0, 0, 0, 30)),
             };
 
             switch (deviceUpdate.Platform)
@@ -58,7 +58,7 @@ namespace Scouts.Backend.Controllers
 
             await _hub.CreateOrUpdateInstallationAsync(installation);
 
-            //await CleanupInstallations();
+            await CleanupInstallations();
 
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
