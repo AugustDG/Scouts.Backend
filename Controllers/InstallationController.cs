@@ -111,7 +111,7 @@ namespace Scouts.Backend.Controllers
                 }
                 
                 if (installationId == String.Empty) return; 
-                else Debug.WriteLine(installationId);
+                else Trace.TraceInformation(installationId);
 
                 var receivedInstallation = await _hub.GetInstallationAsync(installationId);
 
