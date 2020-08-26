@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -108,6 +109,8 @@ namespace Scouts.Backend.Controllers
                         installationId = tag.Substring(tag.IndexOf('{'), 32);
                     }
                 }
+                
+                if (installationId == String.Empty) return;
 
                 var receivedInstallation = await _hub.GetInstallationAsync(installationId);
 
