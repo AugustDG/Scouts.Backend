@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.NotificationHubs;
 using Scouts.Backend.Dev;
-using MongoClient = Scouts.Backend.Dev.MongoClient;
 
 namespace Scouts.Backend.Controllers
 {
