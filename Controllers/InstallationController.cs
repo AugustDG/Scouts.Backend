@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Server.IIS;
 using Microsoft.Azure.NotificationHubs;
 using Scouts.Backend.Dev;
+using MongoClient = Scouts.Backend.Dev.MongoClient;
 
 namespace Scouts.Backend.Controllers
 {
@@ -33,6 +32,7 @@ namespace Scouts.Backend.Controllers
                 InstallationId = deviceUpdate.InstallationId,
                 PushChannel = deviceUpdate.PushChannel,
                 Tags = deviceUpdate.Tags,
+                ExpirationTime = DateTime.Now.Add(new TimeSpan(0, 0, 0, 30))
             };
 
             switch (deviceUpdate.Platform)
