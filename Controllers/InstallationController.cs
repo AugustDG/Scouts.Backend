@@ -110,7 +110,8 @@ namespace Scouts.Backend.Controllers
                     }
                 }
                 
-                if (installationId == String.Empty) return;
+                if (installationId == String.Empty) return; 
+                else Debug.WriteLine(installationId);
 
                 var receivedInstallation = await _hub.GetInstallationAsync(installationId);
 
