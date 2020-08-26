@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "F:\\Projects\\Dev\\Visual Studio\\Scouts\\Scouts.Backend\\Scouts.Backend.csproj",
+    "projectUniqueName": "F:\\Projects\\Dev\\Mobile\\Scouts\\Scouts.Backend\\Scouts.Backend.csproj",
     "projectName": "Scouts.Backend",
-    "projectPath": "F:\\Projects\\Dev\\Visual Studio\\Scouts\\Scouts.Backend\\Scouts.Backend.csproj",
-    "outputPath": "F:\\Projects\\Dev\\Visual Studio\\Scouts\\Scouts.Backend\\obj\\",
+    "projectPath": "F:\\Projects\\Dev\\Mobile\\Scouts\\Scouts.Backend\\Scouts.Backend.csproj",
+    "outputPath": "F:\\Projects\\Dev\\Mobile\\Scouts\\Scouts.Backend\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Microsoft\\Xamarin\\NuGet",
@@ -33,7 +33,7 @@
       "dependencies": {
         "Microsoft.Azure.NotificationHubs": {
           "target": "Package",
-          "version": "[3.3.0, )"
+          "version": "[4.0.0, )"
         },
         "System.Web.Http": {
           "target": "Package",
@@ -58,7 +58,7 @@
           "privateAssets": "all"
         }
       },
-      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
     }
   }
 }
