@@ -32,7 +32,7 @@ namespace Scouts.Backend.Controllers
                 InstallationId = deviceUpdate.InstallationId,
                 PushChannel = deviceUpdate.PushChannel,
                 Tags = deviceUpdate.Tags,
-                ExpirationTime = DateTime.FromBinary(deviceUpdate.ExpirationTime),
+                ExpirationTime = DateTime.FromBinary(deviceUpdate.ExpirationTime).ToUniversalTime(),
             };
 
             switch (deviceUpdate.Platform)
