@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Scouts.Backend.Dev
 {
@@ -15,5 +16,6 @@ namespace Scouts.Backend.Dev
         public string Platform { get; set; }
         public string PushChannel { get; set; }
         public List<string> Tags { get; set; }
+        public DateTime ExpirationTime { get; set; }
     }
 }
