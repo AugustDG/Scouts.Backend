@@ -27,6 +27,8 @@ namespace Scouts.Backend.Controllers
         [HttpPut]
         public async Task<HttpResponseMessage> CreateOrUpdateInstallation([FromBody] DeviceInstallation deviceUpdate)
         {
+            await CleanupInstallations();
+            
             var installation = new Installation
             {
                 InstallationId = deviceUpdate.InstallationId,
@@ -57,8 +59,6 @@ namespace Scouts.Backend.Controllers
             //installation.Tags.Add("username:" + username);
 
             await _hub.CreateOrUpdateInstallationAsync(installation);
-
-            await CleanupInstallations();
 
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
