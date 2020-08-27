@@ -16,6 +16,6 @@ namespace Scouts.Backend.Dev
         public string Platform { get; set; }
         public string PushChannel { get; set; }
         public List<string> Tags { get; set; }
-        public DateTime ExpirationTime { get; set; }
+        public long ExpirationTime { get; set; }
     }
 }
