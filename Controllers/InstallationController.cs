@@ -27,7 +27,7 @@ namespace Scouts.Backend.Controllers
         [HttpPut]
         public async Task<HttpResponseMessage> CreateOrUpdateInstallation([FromBody] DeviceInstallation deviceUpdate)
         {
-            await CleanupInstallations();
+            //await CleanupInstallations();
             
             var installation = new Installation
             {
