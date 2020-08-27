@@ -32,7 +32,6 @@ namespace Scouts.Backend.Controllers
                 InstallationId = deviceUpdate.InstallationId,
                 PushChannel = deviceUpdate.PushChannel,
                 Tags = deviceUpdate.Tags,
-                ExpirationTime = DateTime.FromBinary(deviceUpdate.ExpirationTime).ToUniversalTime(),
             };
 
             switch (deviceUpdate.Platform)
@@ -95,6 +94,11 @@ namespace Scouts.Backend.Controllers
 
         private async Task CleanupInstallations()
         {
+            var emptyNotif = new FcmNotification("{\"data\":{\"message\":\"ola\"}}");
+            await _hub.SendNotificationAsync(emptyNotif, "default");
+
+            await Task.Delay(1000);
+            
             var allRegistrations = await _hub.GetAllRegistrationsAsync(0);
 
             foreach (var registration in allRegistrations)
