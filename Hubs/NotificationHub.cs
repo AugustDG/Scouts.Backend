@@ -9,7 +9,7 @@ namespace Scouts.Backend.Hubs
     {
         public async Task SendNotificationUser(string msg, string destUser)
         {
-            NotificationHubClient hub =
+            var hub =
                 NotificationHubClient.CreateClientFromConnectionString(Constants.NewsFullAccessConnectionString,
                     Constants.NewsNotificationHubName);
             Notification notification = new FcmNotification("{\"data\":{\"message\":\"" + msg + "\"}}");
