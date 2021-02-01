@@ -84,7 +84,7 @@ namespace Scouts.Backend.Controllers
             {
                 await _hub.DeleteInstallationAsync(installationId);
             }
-            catch (Exception e)
+            catch
             {
                 return new HttpResponseMessage(HttpStatusCode.BadRequest);
             }

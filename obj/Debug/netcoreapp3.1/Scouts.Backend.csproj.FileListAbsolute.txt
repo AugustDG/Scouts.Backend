@@ -51,6 +51,12 @@ F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Scouts.Back
 F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Scouts.Backend.Views.dll
 F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Scouts.Backend.Views.pdb
 F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Microsoft.Azure.NotificationHubs.dll
+F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\obj\Debug\netcoreapp3.1\Scouts.Backend.csprojAssemblyReference.cache
 F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\obj\Debug\netcoreapp3.1\Scouts.Backend.AssemblyInfoInputs.cache
@@ -78,9 +84,3 @@ F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\obj\Debug\netcoreapp3.1\staticwebas
 F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\obj\Debug\netcoreapp3.1\Scouts.Backend.dll
 F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\obj\Debug\netcoreapp3.1\Scouts.Backend.pdb
 F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\obj\Debug\netcoreapp3.1\Scouts.Backend.genruntimeconfig.cache
-F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-F:\Projects\Dev\Mobile\Scouts\Scouts.Backend\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll

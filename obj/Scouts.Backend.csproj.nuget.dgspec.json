@@ -45,7 +45,7 @@
           "dependencies": {
             "Microsoft.Azure.NotificationHubs": {
               "target": "Package",
-              "version": "[4.0.0, )"
+              "version": "[4.1.0, )"
             },
             "System.Web.Http": {
               "target": "Package",
